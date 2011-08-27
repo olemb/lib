@@ -26,6 +26,10 @@ Contextmanagers tmpdir() and chdir()::
     ...             os.mkdir('deleted')
     ...
     >>>
+    >>> os.chdir('/tmp/tmpdRzm2V')
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    OSError: [Errno 2] No such file or directory: '/tmp/tmpdRzm2V'
 
 inpipe() and stripped()::
 
