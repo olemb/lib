@@ -133,13 +133,17 @@ def outfile(filename, nl=False, encoding='utf-8'):
 
 
 def stripped(seq):
-    """                                                                                                            
-    Apply str.strip() to all strings in sequence                                                                   
-                                                                                                                   
-    Typical use:                                                                                                   
-                                                                                                                   
-    for line in stripped(open('tags.txt')):                                                                        
-        print(line, 'is now stripped')                                                                             
+    """                       
+    Apply str.strip() to all strings in sequence
+    Usage:                                                                             
+ 
+    >>> for line in stripped(inpipe(['ls'])):
+    ...     print(repr(line))
+    ...
+    'LICENSE'
+    'olelib.py'
+    'olelib.pyc'
+    'README.rst'
     """
 
     for s in seq:
