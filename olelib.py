@@ -46,7 +46,7 @@ def run(args):
                                            ' '.join(args)))
 
 
-def inpipe(args, strip=False, encoding='utf-8'):
+def inpipe(args, encoding='utf-8'):
     """
     Run a command and yield each line from its standard output.
 
@@ -64,9 +64,6 @@ def inpipe(args, strip=False, encoding='utf-8'):
 
     p = subprocess.Popen(args, stdout=subprocess.PIPE)
     for line in p.stdout:
-        if strip:
-            line = line.strip()
-
         if py3:
             line = str(line, encoding)
         else:
@@ -137,6 +134,20 @@ def outfile(filename, nl=False, encoding='utf-8'):
     yield write
 
     f.close()
+
+
+def stripped(seq):
+    """                                                                                                            
+    Apply str.strip() to all strings in sequence                                                                   
+                                                                                                                   
+    Typical use:                                                                                                   
+                                                                                                                   
+    for line in stripped(open('tags.txt')):                                                                        
+        print(line, 'is now stripped')                                                                             
+    """
+
+    for s in seq:
+        yield s.strip()
 
 
 @contextmanager
