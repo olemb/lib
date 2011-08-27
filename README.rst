@@ -51,10 +51,10 @@ outpipe()::
     >>> 
     >>> args = ['vorbiscomment', '-w', '-c', '-', '.ogg']
     >>> with outpipe(args, nl=True) as write:
-    ...     write('artist=Kepa Junkera\n')
-    ...     write('album=Bilbao 00:00h\n')
-    ...     write('title=Arin Qubec\n')
-    ...     write('tracknumber=1\n')
+    ...     write('artist=Kepa Junkera')
+    ...     write('album=Bilbao 00:00h')
+    ...     write('title=Arin Qubec')
+    ...     write('tracknumber=1')
     ...    
     
 Inpipe and outpipe will encode/decode the data. The default encoding
