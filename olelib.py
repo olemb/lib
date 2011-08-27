@@ -50,16 +50,12 @@ def inpipe(args, encoding='utf-8'):
     """
     Run a command and yield each line from its standard output.
 
-    If strip=True, it will strip each before it is returned.
-    The lines are decoded to unicode strings before they are
-    returned.
-
     Usage:
 
-    for line in inpipe(['ls', '/etc/'], strip=True):
+    for line in inpipe(['ls', '/etc/']):
         print(line)
 
-    lines = list(inpipe(['ls', '/etc/'], strip=True))
+    lines = list(inpipe(['ls', '/etc/']))
     """
 
     p = subprocess.Popen(args, stdout=subprocess.PIPE)
