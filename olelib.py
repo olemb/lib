@@ -169,7 +169,7 @@ def chdir(dirname):
 
 def isexec(path):
     """
-    Return True if the file is executable
+    Return True if path is an executable file
     """
 
     if not os.path.isfile(path):
