@@ -3,6 +3,10 @@ olelib.py
 
 Various useful functions.
 
+This is not in any way an official library. It's just a module where i
+collect little functions and other things that I tend to need in a lot
+of programs. Feel free to cut and paste to your own projects.
+
 
 Examples
 --------
