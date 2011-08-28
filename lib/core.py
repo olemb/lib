@@ -52,13 +52,13 @@ def inpipe(args, encoding='utf-8'):
 
 
 @contextmanager
-def outpipe(args, nl=False, encoding='utf-8'):
+def outpipe(args, addnl=False, encoding='utf-8'):
     """
     Context manager which runs the command with args
     and reads from stdin. Yields a function that writes
     data to the pipe.
     
-    If nl=True, a newline is added to each
+    If addnl=True, a newline is added to each
     string written.
 
     Usage:
