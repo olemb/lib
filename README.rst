@@ -1,11 +1,10 @@
 lib.py
 ======
 
-Various useful functions.
+My personal collection of useful Python functions. This lives in
+``~/lib/python``.
 
-This is not in any way an official library. It's just a module where i
-collect little functions and other things that I tend to need in a lot
-of programs. Feel free to cut and paste to your own projects.
+ Feel free to cut and paste to your own projects.
 
 
 Examples
@@ -72,6 +71,7 @@ env()::
     >>> env('$USER lives in $HOME')
     'olemb lives in /home/olemb'
     >>> 
+
 
 Author: Ole Martin Bjørndalen - ombdalen@gmail.com - http://nerdly.info/ole/
 

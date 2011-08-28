@@ -1,20 +1,3 @@
-# -*- coding: utf-8 -*-
-
-"""
-Various useful things.
-
-Todo:
-
-  - do inpipe() and output() accept string as first argument?
-  - shell=True argument for inpipe() and outpipe()?
-  - test with Python 3
-  - document all functions
-"""
-
-__author__ = 'Ole Martin Bjørndalen'
-__email__ = 'ombdalen@gmail.com'
-__license__ = 'MIT'
-
 import os
 import sys
 import stat
