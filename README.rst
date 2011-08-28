@@ -6,6 +6,8 @@ My personal collection of useful Python functions. This lives in
 
 Feel free to cut and paste into your own projects.
 
+All functions are written to work with Python 2 and 3.
+
 
 Examples
 --------
