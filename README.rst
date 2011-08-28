@@ -1,5 +1,5 @@
-olelib.py
-=========
+lib.py
+======
 
 Various useful functions.
 
@@ -14,7 +14,7 @@ Examples
 Contextmanagers tmpdir() and chdir()::
 
     >>> import os
-    >>> from olelib import tmpdir, chdir
+    >>> from lib import tmpdir, chdir
     >>>
     >>> with tmpdir() as t:
     ...     with chdir(t):
@@ -38,7 +38,7 @@ Contextmanagers tmpdir() and chdir()::
 inpipe() and stripped()::
 
     >>> import os
-    >>> from olelib import inpipe, stripped
+    >>> from lib import inpipe, stripped
     >>>
     >>> for line in stripped(inpipe(['ls'])):
     ...     print(repr(line))
@@ -51,7 +51,7 @@ inpipe() and stripped()::
 
 outpipe()::
 
-    >>> from olelib import outpipe
+    >>> from lib import outpipe
     >>> 
     >>> args = ['vorbiscomment', '-w', '-c', '-', '.ogg']
     >>> with outpipe(args, nl=True) as write:
@@ -67,7 +67,7 @@ encoding='latin1') etc.
 
 env()::
 
-    >>> from olelib import env
+    >>> from lib import env
     >>>
     >>> env('$USER lives in $HOME')
     'olemb lives in /home/olemb'
@@ -76,5 +76,3 @@ env()::
 Author: Ole Martin Bjørndalen - ombdalen@gmail.com - http://nerdly.info/ole/
 
 License: MIT
-
-
