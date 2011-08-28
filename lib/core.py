@@ -70,7 +70,7 @@ def outpipe(args, addnl=False, encoding='utf-8'):
     # Todo: this doesn't work
 
     def write(text):
-        if nl:
+        if addnl:
             text += '\n'
 
         data = text.encode(encoding)
