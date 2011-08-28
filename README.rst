@@ -4,7 +4,7 @@ lib.py
 My personal collection of useful Python functions. This lives in
 ``~/lib/python``.
 
- Feel free to cut and paste to your own projects.
+Feel free to cut and paste into your own projects.
 
 
 Examples
