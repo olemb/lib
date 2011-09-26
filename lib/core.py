@@ -15,18 +15,8 @@ py3 = sys.version_info.major >= 3
 class RunCommandException(Exception):
     pass
 
-def run(args):
-    """
-    Run a command.
-    """
-
-    p = subprocess.Popen(args)
-    p.wait()
-
-    if p.returncode != 0:
-        f = 'Command returned {0}: {1}'
-        raise RunCommandException(f.format(p.returncode,
-                                           ' '.join(args)))
+# Just a shortcut
+run = subprocess.check_call
 
 
 def inpipe(args, encoding='utf-8'):
