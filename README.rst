@@ -1,8 +1,22 @@
-lib.py
-======
+lib.py (deprecated)
+===================
+
+Important note
+==============
+
+I've moved this into my ```common``` repository::
+
+  https://github.com/olemb/common/tree/master/lib/python/lib
+
+The version here will no longer be updated. I am only keeping it
+here for those who are still watching it.
+
+
+About lib.py
+============
 
 My personal collection of useful Python functions. This lives in
-``~/lib/python``.
+``~/common/lib/python``.
 
 Feel free to cut and paste into your own projects.
 
