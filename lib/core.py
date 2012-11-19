@@ -130,8 +130,6 @@ def tmpdir(suffix='', prefix='tmp', dir=None):
     shutil.rmtree(dirname)
 
 
-import os
-from contextlib import contextmanager
 @contextmanager
 def chdir(dirname):
     old = os.getcwd()
